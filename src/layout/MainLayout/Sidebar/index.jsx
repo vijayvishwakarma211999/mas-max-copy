@@ -4,6 +4,9 @@ import MuiDrawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ItemList from "../ListItem";
+import LogoComponenet from "../../../component/Logo";
+import { Avatar, Box } from "@mui/material";
+import { deepOrange } from "@mui/material/colors";
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -59,6 +62,18 @@ const Sidebar = ({ open, setOpen }) => {
     <>
       <Drawer variant="permanent" open={open} sx={{ borderRight: "none" }}>
         <DrawerHeader>
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            width="100%"
+          >
+            {open ? (
+              <LogoComponenet />
+            ) : (
+              <Avatar sx={{ bgcolor: "#1976d2", fontSize: "15px" }}>MM</Avatar>
+            )}
+          </Box>
           {/* <IconButton onClick={handleDrawerClose}>
             <ChevronLeftIcon />
           </IconButton> */}
