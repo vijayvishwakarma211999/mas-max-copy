@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import ServiceProviderTemplate from "../../templates/serviceProviderTemplate";
 
 const ServicesProvider = () => {
   return (
     <>
-     <h1>Welcome to ServicesProvider</h1> 
+      <ServiceProviderTemplate /> 
     </>
-  )
-}
+  );
+};
 
-export default ServicesProvider
+export default ServicesProvider;

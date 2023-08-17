@@ -52,6 +52,9 @@ const Drawer = styled(MuiDrawer, {
     ...closedMixin(theme),
     "& .MuiDrawer-paper": closedMixin(theme),
   }),
+  ...(!open && {
+    width: "100px",
+  }),
 }));
 const Sidebar = ({ open, setOpen }) => {
   // const handleDrawerClose = () => {
@@ -79,7 +82,7 @@ const Sidebar = ({ open, setOpen }) => {
           </IconButton> */}
         </DrawerHeader>
 
-        <List {...{ open, setOpen }} sx={{ height: "100%" }}>
+        <List {...{ open, setOpen }} sx={{ height: "100%", padding: "5px" }}>
           <ItemList />
         </List>
         <Divider />

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import CustomerTemplate from "../../templates/customerTemplate";
 
 const Customers = () => {
   return (
     <>
-      <h1> Welcome Customers</h1>
+      <CustomerTemplate />
     </>
-  )
-}
+  );
+};
 
-export default Customers
+export default Customers;

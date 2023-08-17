@@ -1,9 +1,10 @@
 import React from "react";
+import ServiceRequestTemplate from "../../templates/serviceRequestTemplate";
 
 const ServicesRequest = () => {
   return (
     <>
-      <h1>Welcome to ServiceRequest</h1>
+      <ServiceRequestTemplate />
     </>
   );
 };
